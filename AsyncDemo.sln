@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppBenchmark", "WebAppBenchmark\WebAppBenchmark.csproj", "{404D05DD-B4BA-4DA9-BFAB-FA7BEF175DE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awaiting", "Awaiting\Awaiting.csproj", "{80DEF410-E008-4706-8D8A-8D50473B60A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{404D05DD-B4BA-4DA9-BFAB-FA7BEF175DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{404D05DD-B4BA-4DA9-BFAB-FA7BEF175DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{404D05DD-B4BA-4DA9-BFAB-FA7BEF175DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DEF410-E008-4706-8D8A-8D50473B60A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DEF410-E008-4706-8D8A-8D50473B60A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DEF410-E008-4706-8D8A-8D50473B60A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DEF410-E008-4706-8D8A-8D50473B60A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

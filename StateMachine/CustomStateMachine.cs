@@ -10,7 +10,7 @@ public struct CustomStateMachine : IAsyncStateMachine
     private int _secondResult;
     
     public int State;
-    public AsyncTaskMethodBuilder<long> Builder;
+    public AsyncTaskMethodBuilder<int> Builder;
     
     public void MoveNext()
     {
@@ -35,7 +35,8 @@ public struct CustomStateMachine : IAsyncStateMachine
             secondMethodAwaiter = _taskAwaiter;
             _taskAwaiter = default;
             State  = -1;
-            goto get_second_result;
+            GetSecondResult(secondMethodAwaiter);
+            return;
         }
 
         firstMethodAwaiter = _taskAwaiter;
@@ -53,7 +54,11 @@ public struct CustomStateMachine : IAsyncStateMachine
             return;
         }
         
-        get_second_result:
+        GetSecondResult(secondMethodAwaiter);
+    }
+
+    private void GetSecondResult(TaskAwaiter<int> secondMethodAwaiter)
+    {
         _secondResult = secondMethodAwaiter.GetResult();
 
         State = -2;

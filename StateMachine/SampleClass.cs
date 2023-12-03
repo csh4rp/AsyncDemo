@@ -6,7 +6,7 @@ public class SampleClass
     {
         Console.WriteLine($"Method1 Start - Thread: {Environment.CurrentManagedThreadId}");
         
-        await Task.Delay(15_00);
+        await Task.Delay(1_000);
         
         Console.WriteLine($"Method1 End - Thread: {Environment.CurrentManagedThreadId}");
         
@@ -17,7 +17,7 @@ public class SampleClass
     {
         Console.WriteLine($"Method2 Start - Thread: {Environment.CurrentManagedThreadId}");
         
-        await Task.Delay(15_00);
+        await Task.Delay(1_000);
         
         Console.WriteLine($"Method2 End - Thread: {Environment.CurrentManagedThreadId}");
         

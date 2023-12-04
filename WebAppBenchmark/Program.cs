@@ -5,7 +5,7 @@ using NBomber.Http.CSharp;
 var client = new HttpClient();
 
 var simulation = Simulation.Inject(rate: 100,
-    interval: TimeSpan.FromMilliseconds(250),
+    interval: TimeSpan.FromMilliseconds(50),
     during: TimeSpan.FromSeconds(30));
 
 var asyncScenario = Scenario.Create("get-async", async _ =>

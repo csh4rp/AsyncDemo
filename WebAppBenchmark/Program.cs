@@ -6,7 +6,7 @@ var client = new HttpClient();
 
 var simulation = Simulation.Inject(rate: 100,
     interval: TimeSpan.FromMilliseconds(250),
-    during: TimeSpan.FromMinutes(1));
+    during: TimeSpan.FromSeconds(30));
 
 var asyncScenario = Scenario.Create("get-async", async _ =>
     {

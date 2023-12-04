@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using StateMachine;
 
-var asyncTask = Task.Run(async () =>
+await Task.Run(async () =>
 {
     var sample = new SampleClass();
 
@@ -14,7 +14,7 @@ var asyncTask = Task.Run(async () =>
 });
 
 
-var customTask = Task.Run(() =>
+await Task.Run(() =>
 {
     var stateMachine = new CustomStateMachine
     {
@@ -28,6 +28,3 @@ var customTask = Task.Run(() =>
     
     Console.WriteLine($"Custom State Machine sum: {sum}");
 });
-
-await Task.WhenAll(customTask, asyncTask);
-
